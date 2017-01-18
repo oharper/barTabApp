@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        post(drink: "Peroni", quantity: "7", tableNumber: "1", user: "Simon")
+        post(drink: "Carling", quantity: "2", tableNumber: "2", user: "Steve")
+        post(drink: "Carling", quantity: "5", tableNumber: "10", user: "Simon")
     }
     
     
@@ -25,19 +28,19 @@ class ViewController: UIViewController {
     /**
      Test post: stores defined variables title, message and time under "Table" + currentTableNumber/currentTime as "title", "message" and "timeField"
      */
-    func post(){
+    func post(drink: String, quantity: String, tableNumber: String, user: String){
         
-        let currentTime = getDateTime()
-        let currentTableNumber = "1"
-        let title = "Title"
-        let message = "Message"
-        let time = "12:23"
+        let time = getDateTime()
+        let table = tableNumber
+        let drink = drink
+        let quantity = quantity
+        let user = user
         
-        let order : [String : String] = ["title" : title, "message" : message, "timeField" : time]
+        let order : [String : String] = ["Time" : time, "Table" : table, "User" : user, "Drink" : drink, "Quantity" : quantity]
         
         let databaseRef = FIRDatabase.database().reference()
         
-        databaseRef.child("Table"+currentTableNumber).child(currentTime).setValue(order)
+        databaseRef.child("Orders").childByAutoId().setValue(order)
         
     }
     
