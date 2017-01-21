@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     
     /**
-     Test post: stores defined variables title, message and time under "Table" + currentTableNumber/currentTime as "title", "message" and "timeField"
+     Test post: stores defined variables time, table, user, drinkand quantity under path Orders/auto id
      */
     func post(drink: String, quantity: String, tableNumber: String, user: String){
         
