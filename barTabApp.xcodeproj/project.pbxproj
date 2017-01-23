@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304910611E337A9F00E9B902 /* tableSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304910601E337A9F00E9B902 /* tableSelectView.swift */; };
 		30AFD9611E2EE007008AAA15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFD9601E2EE007008AAA15 /* AppDelegate.swift */; };
 		30AFD9631E2EE007008AAA15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFD9621E2EE007008AAA15 /* ViewController.swift */; };
 		30AFD9661E2EE007008AAA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AFD9641E2EE007008AAA15 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		304910601E337A9F00E9B902 /* tableSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableSelectView.swift; sourceTree = "<group>"; };
 		30AFD95D1E2EE007008AAA15 /* barTabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = barTabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AFD9601E2EE007008AAA15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30AFD9621E2EE007008AAA15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				30AFD9601E2EE007008AAA15 /* AppDelegate.swift */,
 				30AFD9621E2EE007008AAA15 /* ViewController.swift */,
 				30AFD9641E2EE007008AAA15 /* Main.storyboard */,
+				304910601E337A9F00E9B902 /* tableSelectView.swift */,
 				30AFD9671E2EE007008AAA15 /* Assets.xcassets */,
 				30AFD9691E2EE007008AAA15 /* LaunchScreen.storyboard */,
 				30AFD96C1E2EE007008AAA15 /* Info.plist */,
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30AFD9631E2EE007008AAA15 /* ViewController.swift in Sources */,
+				304910611E337A9F00E9B902 /* tableSelectView.swift in Sources */,
 				30AFD9611E2EE007008AAA15 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FS4R4RGBU3;
 				INFOPLIST_FILE = barTabApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.owenharper.barTabApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,6 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FS4R4RGBU3;
 				INFOPLIST_FILE = barTabApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.owenharper.barTabApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -595,6 +601,7 @@
 				30AFD9871E2EE007008AAA15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30AFD9881E2EE007008AAA15 /* Build configuration list for PBXNativeTarget "barTabAppTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +610,7 @@
 				30AFD98A1E2EE007008AAA15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30AFD98B1E2EE007008AAA15 /* Build configuration list for PBXNativeTarget "barTabAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +619,7 @@
 				30AFD98D1E2EE007008AAA15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
