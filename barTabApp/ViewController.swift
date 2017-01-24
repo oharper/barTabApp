@@ -12,16 +12,29 @@ import FirebaseDatabase
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
+    var ref:FIRDatabaseReference?
+    var databaseHandle:FIRDatabaseHandle?
+    var userData: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         post(drink: "Peroni", quantity: "7", tableNumber: "1", user: "Simon")
         post(drink: "Carling", quantity: "2", tableNumber: "2", user: "Steve")
         post(drink: "Carling", quantity: "5", tableNumber: "10", user: "Simon")
+        
+        ref = FIRDatabase.database().reference()
+        ref?.child("Users").observeSingleEvent(of: .value, with: { snapshot in
+            
+            print(snapshot.value)
+        })
+        
+       
     }
-    
-    
-    
+
     
     
     
@@ -55,11 +68,8 @@ class ViewController: UIViewController {
         Swift.print("TIME"+result)
         return result
     }
+    
 
-    
-    
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
